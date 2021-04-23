@@ -1,8 +1,6 @@
 // from data.js
 var tableData = data;
 
-// YOUR CODE HERE!
-
 var tbody = d3.select("tbody");
 
 tableData.forEach(function(ufo){
@@ -25,7 +23,7 @@ input.on("submit", runEnter);
 
 function runEnter(){ 
     d3.event.preventDefault();
-    d3.select("tbody").html("");
+
     // var tb = document.getElementById("ufo-table");
     // while(tb.rows.length >1) {
     //     tb.deleteRow(1);
@@ -34,24 +32,35 @@ function runEnter(){
     //console.log(inputElement)
     var inputValue = inputElement.property("value")
     //console.log(inputValue)
+    if (inputValue.length >1){
     var filteredData = tableData.filter(ddata => ddata.datetime === inputValue);
-    //console.log(filteredData)
+    }
+    else{
+        var filteredData = tableData;        
+    }
+    //console.log(filteredData.length)
 
-    var tbody = d3.select("tbody");
-    filteredData.forEach(function(ufo){      
-    //console.log(ufo);
-    var row=tbody.append("tr");
-    //console.log(row)
-    Object.entries(ufo)
-        .forEach(function([key, value]) {
-        //console.log(key, value); 
-        var cell = row.append("td");
-        //console.log(cell);
-        cell.text(value);
-        //console.log(cell);
-        })
-
-        
-    });
+    d3.select("tbody").html("");
+    if (filteredData.length>0){
+        var tbody = d3.select("tbody");
+        filteredData.forEach(function(ufo){      
+        //console.log(ufo);
+        var row=tbody.append("tr");
+        //console.log(row)
+        Object.entries(ufo)
+            .forEach(function([key, value]) {
+            //console.log(key, value); 
+            var cell = row.append("td");
+            //console.log(cell);
+            cell.text(value);
+            })
+        });
+    }
+    else if (filteredData.length===0){
+        var tbody = d3.select("tbody");
+        var cellnull=tbody.append("tr").append("td");
+        cellnull.text("No search results for " + inputValue)
+    }
+    document.getElementById("FilterSearch").reset();
 };
 

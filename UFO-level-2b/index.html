@@ -33,55 +33,100 @@
                 <div class="panel-heading">Filter Search</div>
                 <div class="panel-body">
                   
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">By Date
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
                     <form id="FilterSearch">                 
                       <div class="form-group">
                         <ul class="list-group" id="fbydate"> 
                           <li class="filter list-group-item">
                             <label for="item">Enter a date</label>
                             <input class="form-control" id="filteritem" type="text" placeholder="e.g. 1/1/2010">
+                            *To see whole dataset, click Filter Table with the empty cell.
                           </li>
                         </ul>
                       </div>                                         
+                      <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                  </form>
+                  </ul>
+                  </div>
 
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">By City
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                    <form id="FilterSearchci">                 
                       <div class="form-group">
                         <ul class="list-group" id="fbycity">
                           <li class="filter list-group-item">
                             <label for="item">Enter a city</label>
-                            <input class="form-control" id="filteritemci" type="text" placeholder="e.g. el cajon">
+                            <input class="form-control" id="filteritemci" type="text" placeholder="e.g. la mesa">
+                            *To see whole dataset, click Filter Table with the empty cell.
                           </li>
                         </ul>
                       </div>                                         
+                      <button id="filter-btnci" type="button" class="btn btn-default">Filter Table</button>
+                  </form>
+                  </ul>
+                  </div>
 
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">By State
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                    <form id="FilterSearchst">                 
                       <div class="form-group">
                         <ul class="list-group" id="fbystate">
                           <li class="filter list-group-item">
                             <label for="item">Enter a state</label>
                             <input class="form-control" id="filteritemst" type="text" placeholder="e.g. ca">
+                            *To see whole dataset, click Filter Table with the empty cell.
                           </li>
                         </ul>
                       </div>                                         
+                      <button id="filter-btnst" type="button" class="btn btn-default">Filter Table</button>
+                  </form>
+                  </ul>
+                  </div>
 
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">By Country
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                    <form id="FilterSearchco">                 
                       <div class="form-group">
                         <ul class="list-group" id="fbycountry">
                           <li class="filter list-group-item">
                             <label for="item">Enter a country</label>
                             <input class="form-control" id="filteritemco" type="text" placeholder="e.g. us">
+                            *To see whole dataset, click Filter Table with the empty cell.
                           </li>
                         </ul>
                       </div>                                         
+                      <button id="filter-btnco" type="button" class="btn btn-default">Filter Table</button>
+                  </form>
+                  </ul>
+                  </div>
 
+                  <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown">By Shape
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                    <form id="FilterSearchsh">                 
                       <div class="form-group">
                         <ul class="list-group" id="fbyshape">
                           <li class="filter list-group-item">
                             <label for="item">Enter a shape </label>
-                            <input class="form-control" id="filteritemsh" type="text" placeholder="e.g. triangle">
-                            *To see whole dataset, click Filter Table with the empty cells.
+                            <input class="form-control" id="filteritemsh" type="text" placeholder="e.g. light">
+                            *To see whole dataset, click Filter Table with the empty cell.
                           </li>
                         </ul>
                       </div>                                         
-                      <button id="filter-btn" type="button" class="btn btn-default">Filter Table </button>
+                      <button id="filter-btnsh" type="button" class="btn btn-default">Filter Table </button>
                   </form>
-
+                  </ul>
+                  </div>
                 </div> 
               </div>
             </aside>
