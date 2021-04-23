@@ -32,4 +32,4 @@ I have also completed three (3) sessions:
         d) country
         e) shape
     > "Your search returned no results" will be appeared if the search column of the dataset does not contain the input value.
-    > To see the whole dataset, user can click the Filter Table with the empty cells. This note is also added below the "Enter a shape" Form for user's reference.
+    > To see the whole dataset, user can click the Filter Table with the empty cell. This note is also added below every Form for user's reference.
