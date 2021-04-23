@@ -8,7 +8,7 @@ I have also completed three (3) sessions:
 1. UFO-level-1 
     > A filter for the date is added for this table as according to the requirement.
     > "No search results for xxxxxxxx" will be appeared if the search column of the dataset does not contain the date or information entered into the filter form.
-    > To see the whole dataset, user can click the Filter Table with the emplty cell. This note is also added under the Form for user's reference.
+    > To see the whole dataset, user can click the Filter Table with the empty cell. This note is also added under the Form for user's reference.
 
 2. UFO-level-2
     > Code is able to handle 5 total filters at once with the multi-filtered data rendered back to the table. This includes scenarios of 1 or 2 or 3 or 4 or all 5 of the 5 filters with input values in a filter event.
@@ -19,7 +19,7 @@ I have also completed three (3) sessions:
         d) country
         e) shape
     > "Your search returned no results" will be appeared if the search column of the dataset does not contain the input value.
-    > To see the whole dataset, user can click the Filter Table with the emplty cells. This note is also added below the "Enter a shape" Form for user's reference.
+    > To see the whole dataset, user can click the Filter Table with the empty cells. This note is also added below the "Enter a shape" Form for user's reference.
 
 3. UFO-level-2a
     > User can select a filter from a total of 5 filters available to do the filter search. 
@@ -32,4 +32,4 @@ I have also completed three (3) sessions:
         d) country
         e) shape
     > "Your search returned no results" will be appeared if the search column of the dataset does not contain the input value.
-    > To see the whole dataset, user can click the Filter Table with the emplty cells. This note is also added below the "Enter a shape" Form for user's reference.
+    > To see the whole dataset, user can click the Filter Table with the empty cells. This note is also added below the "Enter a shape" Form for user's reference.
